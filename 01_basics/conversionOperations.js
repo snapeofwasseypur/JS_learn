@@ -31,7 +31,27 @@ let isloggedBoolean=Boolean(islogged);
 let check=45;
 let isCheckString=String(check);
 
-console.log(isCheckString);
-console.log(typeof isCheckString);
+// console.log(isCheckString);
+// console.log(typeof isCheckString);
 
 //45-->"45"
+
+
+// ******************Operations**************
+
+let value=22;
+let negval=-value;
+// console.log(negval);
+
+// console.log(2+3);
+// console.log(2-3);
+// console.log(2*3);
+// console.log(2/3);
+// console.log(2**3);//power 2^3
+// console.log(2%3);
+
+//string concatenation
+let str1="hello";
+let str2=" love";
+let str3=str1+str2;
+console.log(str3);
