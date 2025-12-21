@@ -20,3 +20,29 @@ const myfunction=function(){
 }//function
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Memory:
+//stack is for primitive datatypes and its they reused only get copy of that not a address, here parent is not touched.
+//  , Heap is for non primitive datatypes but always share the address and if you change something it will change parent also .
+
+//stack example
+let myytname="arstech";
+let anothername=myytname;
+anothername="heyshwaty";
+console.log(myytname);
+console.log(anothername);
+
+//heap example
+
+let userone={
+    email:"am@google.com",
+    id:1265
+}
+let usertwo=userone;
+
+usertwo.id=5565;
+console.log(usertwo.id);
+console.log(userone.id);//here you will see parent is also updated with new value .
+
+
